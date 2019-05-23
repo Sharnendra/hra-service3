@@ -1,0 +1,14 @@
+mail:
+  debug: true
+  store:
+    protocol: pop3
+  transport:
+    protocol: smtp
+  smtp:
+    auth: true
+    starttls: true
+    host: outlook.office365.com
+    port: 587
+proxySet: true
+socksProxyHost: proxy.cognizant.com
+socksProxyPort: 6050

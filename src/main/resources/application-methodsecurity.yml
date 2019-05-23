@@ -1,0 +1,16 @@
+methodsecurity:
+  secret: 621@365
+  securitymap:
+    -
+     serviceId: GET_TOKEN_DETAILS
+     rolesAllowed: 
+      USER,
+      ADMIN
+    -
+     serviceId: GET_TOKEN_DETAILS_TEST
+     rolesAllowed: 
+       USER
+    -
+     serviceId: GET_TOKEN_DETAILS_TEST_ALL
+     rolesAllowed: 
+       USER.*

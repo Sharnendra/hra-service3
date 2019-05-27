@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.rnlic.hraapp.bean.OtpDetailsReqBean;
+import com.rnlic.hraapp.bean.OtpMaster;
 import com.rnlic.hraapp.bean.OtpValidationReqBean;
 import com.rnlic.hraapp.configuration.MessagingConfig;
-import com.rnlic.hraapp.modal.OtpMaster;
 import com.rnlic.hraapp.repository.OTP_intefarce;
 import com.rnlic.hraapp.repository.OtpRepository;
 

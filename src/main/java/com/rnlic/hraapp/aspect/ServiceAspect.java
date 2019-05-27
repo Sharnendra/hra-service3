@@ -28,7 +28,7 @@ public class ServiceAspect {
 	@Autowired
 	private MethodSecurityConfig configMethodSecurity;
 
-	@Before(value = "args(httpServletRequest) && @annotation(com.rllic.hraapp.rbac.Secured)")
+	@Before(value = "args(httpServletRequest) && @annotation(com.rnlic.hraapp.rbac.Secured)")
 	public void afterAdvice(JoinPoint joinPoint,HttpServletRequest httpServletRequest) {
 		MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();

@@ -1,4 +1,4 @@
-package com.rnlic.hraapp.testcontroller;
+package com.rnlic.hraapp.controller;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

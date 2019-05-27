@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.rnlic.hraapp.modal.OtpMaster;
+import com.rnlic.hraapp.bean.OtpMaster;
 
 @Repository
 public interface OtpRepository extends JpaRepository<OtpMaster, Long>{

@@ -1,4 +1,4 @@
-package com.rnlic.hraapp.modal;
+package com.rnlic.hraapp.bean;
 
 import java.util.Date;
 

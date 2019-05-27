@@ -1,4 +1,4 @@
-package com.rnlic.hraapp.rbac;
+package com.rnlic.hraapp.security;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

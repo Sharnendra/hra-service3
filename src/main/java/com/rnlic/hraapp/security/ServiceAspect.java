@@ -1,4 +1,4 @@
-package com.rnlic.hraapp.aspect;
+package com.rnlic.hraapp.security;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
@@ -16,7 +16,6 @@ import org.springframework.stereotype.Component;
 
 import com.rnlic.hraapp.configuration.MethodSecurityConfig;
 import com.rnlic.hraapp.constant.GenericConstants;
-import com.rnlic.hraapp.rbac.Secured;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -28,7 +27,7 @@ public class ServiceAspect {
 	@Autowired
 	private MethodSecurityConfig configMethodSecurity;
 
-	@Before(value = "args(httpServletRequest) && @annotation(com.rnlic.hraapp.rbac.Secured)")
+	@Before(value = "args(httpServletRequest) && @annotation(com.rnlic.hraapp.security.Secured)")
 	public void afterAdvice(JoinPoint joinPoint,HttpServletRequest httpServletRequest) {
 		MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();

@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.rnlic.hraapp.bean.JwtUser;
-import com.rnlic.hraapp.rbac.Secured;
 import com.rnlic.hraapp.security.JwtGenerator;
+import com.rnlic.hraapp.security.Secured;
 
 @RestController
 
